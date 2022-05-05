@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es2017",
         "noImplicitAny": true,
         "noImplicitReturns": true,
+        "noImplicitThis": true,
         "declaration": true,
         "out": "../built/sim.js",
         "rootDir": ".",
