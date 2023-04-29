@@ -7,10 +7,9 @@
         "pxt-helpers.ts",
         "enums.d.ts",
         "sims.d.ts",
-        "ns.ts"
-    ],
-    "testFiles": [
-        "test.ts"
+        "discord.ts",
+        "discordChannel.ts",
+        "discordMessage.ts"
     ],
     "public": true,
     "dependencies": {}
