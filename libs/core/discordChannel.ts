@@ -17,7 +17,7 @@ class Channel {
     //% blockCombine
     get guild() { return this._guild }
 
-    _id: string
+    _id: number
     //% blockCombine
     get id() { return this._id }
 
@@ -25,7 +25,7 @@ class Channel {
     //% blockCombine block="jump url"
     get jump_url() { return this._jump_url }
 
-    _last_message: string
+    _last_message: Message
     //% blockCombine block="last message"
     get last_message() { return this._last_message }
 
@@ -41,7 +41,7 @@ class Channel {
     //% blockCombine
     get name() { return this._name }
 
-    _nsfw: string
+    _nsfw: boolean
     //% blockCombine
     get nsfw() { return this._nsfw }
 
@@ -53,7 +53,7 @@ class Channel {
     //% blockCombine block="permissions synced"
     get permissions_synced() { return this._permissions_synced }
 
-    _position: string
+    _position: number
     //% blockCombine
     get position() { return this._position }
 
@@ -76,5 +76,17 @@ class Channel {
         file?: string,
         tts?: boolean) {
     }
+
+    //% block="send and save message in $this - message $content||- embed $embed - file $file - text to speech $tts"
+    //% this.defl=channel
+    //% content.defl="Hello World!"
+    //% expandableArgumentMode="toggle"
+    //% inlineInputMode=external
+    //% blockSetVariable=return_message
+    public sendAlt(
+        content: string,
+        embed?: Embed,
+        file?: string,
+        tts?: boolean): Message { return undefined }
 
 }

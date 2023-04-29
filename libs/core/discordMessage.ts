@@ -49,7 +49,7 @@ class Message {
     //% blockCombine block="edited at"
     get edited_at() { return this._edited_at }
 
-    _embeds: string
+    _embeds: Embed[]
     //% blockCombine
     get embeds() { return this._embeds }
 
@@ -61,7 +61,7 @@ class Message {
     //% blockCombine
     get guild() { return this._guild }
 
-    _id: string
+    _id: number
     //% blockCombine
     get id() { return this._id }
 
@@ -81,15 +81,11 @@ class Message {
     //% blockCombine
     get mentions() { return this._mentions }
 
-    _nonce: string
-    //% blockCombine
-    get nonce() { return this._nonce }
-
     _pinned: string
     //% blockCombine
     get pinned() { return this._pinned }
 
-    _position: string
+    _position: number
     //% blockCombine
     get position() { return this._position }
 
@@ -129,7 +125,7 @@ class Message {
     //% blockCombine block="system content"
     get system_content() { return this._system_content }
 
-    _tts: string
+    _tts: boolean
     //% blockCombine
     get tts() { return this._tts }
 

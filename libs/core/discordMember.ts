@@ -9,7 +9,7 @@ class Member {
     //% blockCombine
     get banner() { return this._banner }
 
-    _bot: string
+    _bot: boolean
     //% blockCombine
     get bot() { return this._bot }
 
@@ -37,11 +37,11 @@ class Member {
     //% blockCombine block="display name"
     get display_name() { return this._display_name }
 
-    _dm_channel: string
+    _dm_channel: Channel
     //% blockCombine block="dm channel"
     get dm_channel() { return this._dm_channel }
 
-    _guild: string
+    _guild: Guild
     //% blockCombine
     get guild() { return this._guild }
 
@@ -53,7 +53,7 @@ class Member {
     //% blockCombine block="guild permissions"
     get guild_permissions() { return this._guild_permissions }
 
-    _id: string
+    _id: boolean
     //% blockCombine
     get id() { return this._id }
 
