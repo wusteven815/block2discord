@@ -58,7 +58,7 @@
    Menu
 --------------------*/
 
-@mainMenuBackground: @purple;
+@mainMenuBackground: #313338;
 @mainMenuInvertedBackground: @mainMenuBackground;
 @mainMenuTutorialBackground: @orange;
 
@@ -70,9 +70,9 @@
    Layout
 --------------------*/
 
-@sideBarWidth: 22rem;
-@simulatorWidth: 27rem;
-@simulatorWidthSmall: 20rem;
+@sideBarWidth: 0rem;
+@simulatorWidth: 0rem;
+@simulatorWidthSmall: 0rem;
 
 /*-------------------
    Background
@@ -102,7 +102,7 @@
    Blockly
 --------------------*/
 
-@blocklyFont: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+@blocklyFont: 'JetBrains Mono', 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
 
 /*-------------------
    Flyout
