@@ -8,22 +8,10 @@ class Channel {
     _category_id: string
     //% blockCombine block="category id"
     get category_id() { return this._category_id }
-
-    _changed_roles: string
-    //% blockCombine block="changed roles"
-    get changed_roles() { return this._changed_roles }
-
+    
     _created_at: string
     //% blockCombine block="created at"
     get created_at() { return this._created_at }
-
-    _default_auto_archive_duration: string
-    //% blockCombine block="default auto archive duration"
-    get default_auto_archive_duration() { return this._default_auto_archive_duration }
-
-    _default_thread_slowmode_delay: string
-    //% blockCombine block="default thread slowmode delay"
-    get default_thread_slowmode_delay() { return this._default_thread_slowmode_delay }
 
     _guild: string
     //% blockCombine
@@ -44,10 +32,6 @@ class Channel {
     _last_message_id: string
     //% blockCombine block="last message id"
     get last_message_id() { return this._last_message_id }
-
-    _members: string
-    //% blockCombine
-    get members() { return this._members }
 
     _mention: string
     //% blockCombine
@@ -77,17 +61,9 @@ class Channel {
     //% blockCombine block="slowmode delay"
     get slowmode_delay() { return this._slowmode_delay }
 
-    _threads: string
-    //% blockCombine
-    get threads() { return this._threads }
-
     _topic: string
     //% blockCombine
     get topic() { return this._topic }
-
-    _type: string
-    //% blockCombine
-    get type() { return this._type }
 
     //% block="send in $this - message $content||- embed $embed - file $file - text to speech $tts"
     //% this.defl=channel

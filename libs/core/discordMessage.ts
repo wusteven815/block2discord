@@ -17,7 +17,7 @@ class Message {
     //% blockCombine
     get attachments() { return this._attachments }
 
-    _author: string
+    _author: Member
     //% blockCombine
     get author() { return this._author }
 
