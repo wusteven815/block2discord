@@ -15,9 +15,9 @@
       "loopsBlocks": true,
       "logicBlocks": true,
       "variablesBlocks": true,
-      "textBlocks": false,
-      "functionBlocks": false,
-      "listsBlocks": false
+      "textBlocks": true,
+      "functionBlocks": true,
+      "listsBlocks": true
     },
     "simulator": {
         "autoRun": true
