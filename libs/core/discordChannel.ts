@@ -72,7 +72,7 @@ class Channel {
     //% inlineInputMode=external
     public send(
         content: string,
-        embed?: string,
+        embed?: Embed,
         file?: string,
         tts?: boolean) {
     }
