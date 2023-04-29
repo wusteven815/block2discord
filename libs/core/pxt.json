@@ -9,6 +9,8 @@
         "sims.d.ts",
         "discord.ts",
         "discordChannel.ts",
+        "discordEmbed.ts",
+        "discordMember.ts",
         "discordMessage.ts"
     ],
     "public": true,
