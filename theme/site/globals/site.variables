@@ -13,7 +13,7 @@
 --------------------*/
 
 @headerFont        : "Roboto Mono", serif;
-@pageFont          : "Roboto Mono", serif;
+@pageFont          : "Trebuchet MS", "MS Trebuchet", "Roboto Mono", serif;
 @googleFontName    : 'Roboto Mono';
 @importGoogleFonts : true;
 
