@@ -151,7 +151,6 @@
   "String@type": "Combine, split, and search text strings.",
   "StringMap": "A dictionary from string key to string values",
   "console.log": "Print out message",
-  "hare.hop": "This is hop",
   "loops.forever": "Repeats the code forever in the background. On each iteration, allows other code to run.",
   "loops.forever|param|body": "the code to repeat",
   "loops.pause": "Pause for the specified time in milliseconds",
@@ -162,13 +161,5 @@
   "parseInt|param|text": "A string to convert into an integral number. eg: \"123\"",
   "randint": "Returns a pseudorandom number between min and max included.\nIf both numbers are integral, the result is integral.",
   "randint|param|max": "the upper inclusive bound, eg: 10",
-  "randint|param|min": "the lower inclusive bound, eg: 0",
-  "sprites.createSprite": "Creates a new sprite",
-  "turtle": "Basic functionalities.",
-  "turtle.forward": "Moves the sprite forward",
-  "turtle.forward|param|steps": "number of steps to move, eg: 1",
-  "turtle.onBump": "Triggers when the turtle bumps a wall",
-  "turtle.turn": "Moves the sprite forward",
-  "turtle.turn|param|angle": "degrees to turn, eg:90",
-  "turtle.turn|param|direction": "the direction to turn, eg: Direction.Left"
+  "randint|param|min": "the lower inclusive bound, eg: 0"
 }
