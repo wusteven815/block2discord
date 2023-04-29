@@ -8,7 +8,7 @@ namespace discord {
 
     //% block="this bot"
     //% group="Client"
-    export function placeholderClient(): string { return undefined }
+    export function placeholderClient(): Member { return undefined }
 
     //% block="on guild channel delete $channel"
     //% draggableParameters
