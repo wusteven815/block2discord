@@ -67,6 +67,7 @@
   "discord.onGuildChannelDelete|block": "on guild channel delete $channel",
   "discord.onGuildChannelUpdate|block": "on guild channel update from $before to $after",
   "discord.onMessage|block": "on message $message",
+  "discord.placeholderClient|block": "this bot",
   "discord.run|block": "run bot with token $token",
   "loops.forever|block": "forever",
   "loops.pause|block": "pause (ms) %pause",

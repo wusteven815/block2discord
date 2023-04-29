@@ -4,26 +4,30 @@ namespace discord {
 
     //% block="run bot with token $token"
     //% group="Client"
-    export function run(token: string) { }
+    export function run(token: string) {}
+
+    //% block="this bot"
+    //% group="Client"
+    export function placeholderClient(): string { return undefined }
 
     //% block="on guild channel delete $channel"
     //% draggableParameters
     //% group="Events"
-    export function onGuildChannelDelete(handler: (channel: Channel) => void) { }
+    export function onGuildChannelDelete(handler: (channel: Channel) => void) {}
 
     //% block="on guild channel create $channel"
     //% draggableParameters
     //% group="Events"
-    export function onGuildChannelCreate(handler: (channel: Channel) => void) { }
+    export function onGuildChannelCreate(handler: (channel: Channel) => void) {}
     
     //% block="on guild channel update from $before to $after"
     //% draggableParameters
     //% group="Events"
-    export function onGuildChannelUpdate(handler: (before: Channel, after: Channel) => void) { }
+    export function onGuildChannelUpdate(handler: (before: Channel, after: Channel) => void) {}
 
     //% block="on message $message"
     //% draggableParameters
     //% group="Events"
-    export function onMessage(handler: (message: Message) => void) { }
-
+    export function onMessage(handler: (message: Message) => void) {}
 }
+
