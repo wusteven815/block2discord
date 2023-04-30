@@ -6,14 +6,14 @@ Here are some fun programs for your board!
 
 ```codecard
 [{
-  "name": "Square",
-  "description": "Move in a square",
-  "url":"/examples/square",
+  "name": "Ping",
+  "description": "Your bot responds with pong and the latency.",
+  "url":"/examples/ping",
   "cardType": "example"
 }, {
-  "name": "Square 2",
-  "description": "TBD",
-  "url": "/examples/square2",
+  "name": "Info Snippet",
+  "description": "Shows information about Python and JavaScript",
+  "url":"/examples/info",
   "cardType": "example"
 }]
 ```
