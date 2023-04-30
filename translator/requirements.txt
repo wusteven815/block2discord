@@ -1,0 +1,3 @@
+autoflake
+autopep8
+discord

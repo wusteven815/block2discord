@@ -1,55 +1,40 @@
-# Sample target for a Microsoft MakeCode Editor
+<div align="center">
 
-This repo contains a sample editor built with [Microsoft MakeCode (PXT)](https://github.com/Microsoft/pxt). The editor is hosted on the GitHub pages at [http://microsoft.github.io/pxt-sample/](http://microsoft.github.io/pxt-sample/)
+# block2discord
 
-[![Build Status](https://travis-ci.org/Microsoft/pxt-sample.svg?branch=master)](https://travis-ci.org/Microsoft/pxt-sample)
-[![Community Discord](https://img.shields.io/discord/448979533891371018.svg)](https://aka.ms/makecodecommunity)
+![](https://img.shields.io/github/license/wusteven815/block2discord)
+![](https://img.shields.io/github/last-commit/wusteven815/block2discord)
+![](https://img.shields.io/badge/for-DeerHacks-blue)
 
-If you'd like to start your own editor, fork this repo and fix all the TODOs.
+</div>
 
-## TODOs
+# Table of Contents
 
-- [ ] Fork repo and setup local server (see below)
-- [ ] Update metadata in ``pxtarget.json``. Change the id, title, name, etc... to your taste.
-- [ ] Update the JavaScript runtime in ``sim/simulator.ts``. If needed add additional JS library under ``sim/public/**``
-and edit ``sim/public/simulator.html`` with additional ``script`` tags.
-- [ ] Update the APIs in ``sim/api.ts`` to use your runtime.
-- [ ] Test your editor in the local server
-- [ ] run ``pgk staticpkg --gh --bump`` to upload a static version to GitHub pages.
+- [block2discord](#block2discord)
+- [Table of Contents](#table-of-contents)
+- [Features](#features)
+- [Installation/Usage](#installationusage)
+  - [Editor](#editor)
+  - [Translator](#translator)
 
-## Running locally
 
-These instructions allow to run locally to modify the sample.
+# Features
 
-### Setup
+Use `block2discord` to create Discord bots in a block-like programming language. To run the code, a program will translate it into Python using `discord.py`.
 
-The following commands are a 1-time setup after synching the repo on your machine.
 
-* install [node.js](https://nodejs.org/en/)
+# Installation/Usage
 
-* install the PXT command line
-```
-npm install -g pxt
-```
-* install the dependencies
-```
-npm install
-```
+## Editor
 
-### Running the local server
+1. Clone this repository with `git clone`
+2. Install npm dependencies with `npm install`
+3. Start the server with `npx pxt serve`
 
-After you're done, simple run this command to open a local web server:
-```
-pxt serve
-```
+## Translator
 
-After making a change in the source, refresh the page in the browser.
+All steps take place within the `translator/` folder
 
-## Updating the tools
-
-If you would like to pick up the latest PXT build, simply run
-```
-pxt update
-```
-
-More instructions at https://github.com/Microsoft/pxt#running-a-target-from-localhost 
+1. Install pip dependencies with `pip install -r requirements.txt`
+2. Create a file called `block2discord.in` and add your Python code from the editor
+3. Run the translator with `python translator.py` or `python3 translator.py`
