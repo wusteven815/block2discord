@@ -10,6 +10,11 @@ namespace discord {
     //% group="Client"
     export function clientUser(): Member { return undefined }
 
+    //% block="on guild channel update from $before to $after"
+    //% draggableParameters
+    //% group="Events - Channel"
+    export function onGuildChannelUpdate(handler: (before: Channel, after: Channel) => void) {}
+
     //% block="on guild channel delete $channel"
     //% draggableParameters
     //% group="Events - Channel"
@@ -20,25 +25,15 @@ namespace discord {
     //% group="Events - Channel"
     export function onGuildChannelCreate(handler: (channel: Channel) => void) {}
     
-    //% block="on guild channel update from $before to $after"
-    //% draggableParameters
-    //% group="Events - Channel"
-    export function onGuildChannelUpdate(handler: (before: Channel, after: Channel) => void) {}
-
-    //% block="on member join $member"
-    //% draggableParameters
-    //% group="Events - Member"
-    export function onMemberJoin(handler: (member: Member) => void) {}
-    
     //% block="on member remove $member"
     //% draggableParameters
     //% group="Events - Member"
     export function onMemberRemove(handler: (member: Member) => void) {}
 
-    //% block="on message $message"
+    //% block="on member join $member"
     //% draggableParameters
-    //% group="Events - Message"
-    export function onMessage(handler: (message: Message) => void) {}
+    //% group="Events - Member"
+    export function onMemberJoin(handler: (member: Member) => void) {}
     
     //% block="on message edit $before $after"
     //% draggableParameters
@@ -49,4 +44,9 @@ namespace discord {
     //% draggableParameters
     //% group="Events - Message"
     export function onMessageDelete(handler: (message: Message) => void) {}
+
+    //% block="on message $message"
+    //% draggableParameters
+    //% group="Events - Message"
+    export function onMessage(handler: (message: Message) => void) {}
 }

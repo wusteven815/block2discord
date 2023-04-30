@@ -9,10 +9,12 @@
         "sims.d.ts",
         "discord.ts",
         "discordChannel.ts",
+        "discordColour.ts",
         "discordEmbed.ts",
         "discordGuild.ts",
         "discordMember.ts",
-        "discordMessage.ts"
+        "discordMessage.ts",
+        "time.ts"
     ],
     "public": true,
     "dependencies": {}

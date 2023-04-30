@@ -4,7 +4,7 @@ namespace discordEmbed {
     //% block="create embed | - title $title - description $description - colour $colour"
     //% blockSetVariable=embed
     //% inlineInputMode=external
-    export function createEmbed(title: string, description: string, colour: string): Embed {
+    export function createEmbed(title: string, description: string, colour: Colour): Embed {
         return undefined
     }
 }

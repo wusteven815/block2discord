@@ -13,7 +13,7 @@ class Member {
     //% blockCombine
     get bot() { return this._bot }
 
-    _colour: string
+    _colour: Colour
     //% blockCombine
     get colour() { return this._colour }
 

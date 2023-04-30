@@ -137,4 +137,23 @@ class Message {
     //% blockCombine block="webhook id"
     get webhook_id() { return this._webhook_id }
 
+    //% block="edit message $this - content $content - embed $embed - attachments $attachments"
+    //% this.defl=message
+    //% content.defl="Hello World!"
+    //% inlineInputMode=external
+    public edit(
+        content: string,
+        embed: Embed,
+        attachments: string) {
+    }
+
+    //% block="edit and save message $this - content $content - embed $embed - attachments $attachments"
+    //% this.defl=message
+    //% content.defl="Hello World!"
+    //% inlineInputMode=external
+    //% blockSetVariable=return_message
+    public editAlt(
+        content: string,
+        embed: Embed,
+        attachments: string): Message { return undefined }
 }
