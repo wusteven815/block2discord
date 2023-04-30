@@ -1,21 +1,9 @@
 //% block="Discord Message" color="#3d55f0" icon="\uf075"
 class Message {
 
-    _activity: string
-    //% blockCombine
-    get activity() { return this._activity }
-
-    _application: string
-    //% blockCombine
-    get application() { return this._application }
-
     _application_id: string
     //% blockCombine block="application id"
     get application_id() { return this._application_id }
-
-    _attachments: string
-    //% blockCombine
-    get attachments() { return this._attachments }
 
     _author: Member
     //% blockCombine
@@ -25,39 +13,19 @@ class Message {
     //% blockCombine
     get channel() { return this._channel }
 
-    _channel_mentions: string
-    //% blockCombine block="channel mentions"
-    get channel_mentions() { return this._channel_mentions }
-
     _clean_content: string
     //% blockCombine block="clean content"
     get clean_content() { return this._clean_content }
-
-    _components: string
-    //% blockCombine
-    get components() { return this._components }
 
     _content: string
     //% blockCombine
     get content() { return this._content }
 
-    _created_at: string
-    //% blockCombine block="created at"
-    get created_at() { return this._created_at }
-
-    _edited_at: string
-    //% blockCombine block="edited at"
-    get edited_at() { return this._edited_at }
-
     _embeds: Embed[]
     //% blockCombine
     get embeds() { return this._embeds }
 
-    _flags: string
-    //% blockCombine
-    get flags() { return this._flags }
-
-    _guild: string
+    _guild: Guild
     //% blockCombine
     get guild() { return this._guild }
 
@@ -65,23 +33,19 @@ class Message {
     //% blockCombine
     get id() { return this._id }
 
-    _interaction: string
-    //% blockCombine
-    get interaction() { return this._interaction }
-
     _jump_url: string
     //% blockCombine block="jump url"
     get jump_url() { return this._jump_url }
 
-    _mention_everyone: string
+    _mention_everyone: boolean
     //% blockCombine block="mention everyone"
     get mention_everyone() { return this._mention_everyone }
 
-    _mentions: string
+    _mentions: Member[]
     //% blockCombine
     get mentions() { return this._mentions }
 
-    _pinned: string
+    _pinned: boolean
     //% blockCombine
     get pinned() { return this._pinned }
 
@@ -89,53 +53,25 @@ class Message {
     //% blockCombine
     get position() { return this._position }
 
-    _raw_channel_mentions: string
+    _raw_channel_mentions: number[]
     //% blockCombine block="raw channel mentions"
     get raw_channel_mentions() { return this._raw_channel_mentions }
 
-    _raw_mentions: string
+    _raw_mentions: number[]
     //% blockCombine block="raw mentions"
     get raw_mentions() { return this._raw_mentions }
 
-    _raw_role_mentions: string
+    _raw_role_mentions: number[]
     //% blockCombine block="raw role mentions"
     get raw_role_mentions() { return this._raw_role_mentions }
 
-    _reactions: string
-    //% blockCombine
-    get reactions() { return this._reactions }
-
-    _reference: string
+    _reference: Message
     //% blockCombine
     get reference() { return this._reference }
-
-    _role_mentions: string
-    //% blockCombine block="role mentions"
-    get role_mentions() { return this._role_mentions }
-
-    _role_subscription: string
-    //% blockCombine block="role subscription"
-    get role_subscription() { return this._role_subscription }
-
-    _stickers: string
-    //% blockCombine
-    get stickers() { return this._stickers }
-
-    _system_content: string
-    //% blockCombine block="system content"
-    get system_content() { return this._system_content }
 
     _tts: boolean
     //% blockCombine
     get tts() { return this._tts }
-
-    _type: string
-    //% blockCombine
-    get type() { return this._type }
-
-    _webhook_id: string
-    //% blockCombine block="webhook id"
-    get webhook_id() { return this._webhook_id }
 
     //% block="edit message $this - content $content - embed $embed - attachments $attachments"
     //% this.defl=message
@@ -144,7 +80,7 @@ class Message {
     public edit(
         content: string,
         embed: Embed,
-        attachments: string) {
+        attachments: File[]) {
     }
 
     //% block="save message and edit $this - content $content - embed $embed - attachments $attachments"
@@ -155,7 +91,7 @@ class Message {
     public editAlt(
         content: string,
         embed: Embed,
-        attachments: string): Message { return undefined }
+        attachments: File[]): Message { return undefined }
 
     //% block="reply to $this - message $content||- embed $embed - file $file - text to speech $tts"
     //% this.defl=message
@@ -165,7 +101,7 @@ class Message {
     public reply(
         content: string,
         embed?: Embed,
-        file?: string,
+        file?: File,
         tts?: boolean) {
     }
 
@@ -178,6 +114,6 @@ class Message {
     public replyAlt(
         content: string,
         embed?: Embed,
-        file?: string,
+        file?: File,
         tts?: boolean): Message { return undefined }
 }

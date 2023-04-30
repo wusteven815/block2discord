@@ -1,17 +1,9 @@
 //% block="Discord Channel" color="#3d55f0" icon="\uf120"
 class Channel {
 
-    _category: string
-    //% blockCombine
-    get category() { return this._category }
-
-    _category_id: string
+    _category_id: number
     //% blockCombine block="category id"
     get category_id() { return this._category_id }
-    
-    _created_at: string
-    //% blockCombine block="created at"
-    get created_at() { return this._created_at }
 
     _guild: string
     //% blockCombine
@@ -29,7 +21,7 @@ class Channel {
     //% blockCombine block="last message"
     get last_message() { return this._last_message }
 
-    _last_message_id: string
+    _last_message_id: number
     //% blockCombine block="last message id"
     get last_message_id() { return this._last_message_id }
 
@@ -45,19 +37,11 @@ class Channel {
     //% blockCombine
     get nsfw() { return this._nsfw }
 
-    _overwrites: string
-    //% blockCombine
-    get overwrites() { return this._overwrites }
-
-    _permissions_synced: string
-    //% blockCombine block="permissions synced"
-    get permissions_synced() { return this._permissions_synced }
-
     _position: number
     //% blockCombine
     get position() { return this._position }
 
-    _slowmode_delay: string
+    _slowmode_delay: number
     //% blockCombine block="slowmode delay"
     get slowmode_delay() { return this._slowmode_delay }
 
@@ -73,7 +57,7 @@ class Channel {
     public send(
         content: string,
         embed?: Embed,
-        file?: string,
+        file?: File,
         tts?: boolean) {
     }
 
@@ -86,7 +70,7 @@ class Channel {
     public sendAlt(
         content: string,
         embed?: Embed,
-        file?: string,
+        file?: File,
         tts?: boolean): Message { return undefined }
 
 }

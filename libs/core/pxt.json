@@ -11,6 +11,7 @@
         "discordColour.ts",
         "discordContext.ts",
         "discordEmbed.ts",
+        "discordFile.ts",
         "discordGuild.ts",
         "discordMember.ts",
         "discordMessage.ts",

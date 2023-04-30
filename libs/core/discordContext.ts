@@ -37,7 +37,7 @@ class Context {
     public send(
         content: string,
         embed?: Embed,
-        file?: string,
+        file?: File,
         tts?: boolean) {
     }
 
@@ -50,7 +50,7 @@ class Context {
     public sendAlt(
         content: string,
         embed?: Embed,
-        file?: string,
+        file?: File,
         tts?: boolean): Message { return undefined }
 
     //% block="reply to $this - message $content||- embed $embed - file $file - text to speech $tts"
@@ -61,7 +61,7 @@ class Context {
     public reply(
         content: string,
         embed?: Embed,
-        file?: string,
+        file?: File,
         tts?: boolean) {
     }
 
@@ -74,6 +74,6 @@ class Context {
     public replyAlt(
         content: string,
         embed?: Embed,
-        file?: string,
+        file?: File,
         tts?: boolean): Message { return undefined }
 }

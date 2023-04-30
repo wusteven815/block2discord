@@ -107,12 +107,15 @@ namespace discordColour {
     export function blue(): Colour { return undefined }
 
     //%block="h $h s $s v $v"
+    //% blockSetVariable=my_colour
     export function fromHsv(h: number, s: number, v: number): Colour { return undefined }
 
     //%block="r $r g $g b $b"
+    //% blockSetVariable=my_colour
     export function fromRgb(r: number, g: number, b: number): Colour { return undefined }
 
     //%block="# $str"
+    //% blockSetVariable=my_colour
     export function fromStr(str: string): Colour { return undefined }
 }
 

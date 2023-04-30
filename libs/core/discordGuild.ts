@@ -5,35 +5,19 @@ class Guild {
     //% blockCombine block="approximate member count"
     get approximate_member_count() { return this._approximate_member_count }
 
-    _banner: string
-    //% blockCombine
-    get banner() { return this._banner }
-
-    _channels: Channel
+    _channels: Channel[]
     //% blockCombine
     get channels() { return this._channels }
-
-    _created_at: string
-    //% blockCombine block="created at"
-    get created_at() { return this._created_at }
-
-    _default_role: string
-    //% blockCombine block="default role"
-    get default_role() { return this._default_role }
 
     _description: string
     //% blockCombine
     get description() { return this._description }
 
-    _emojis: string
-    //% blockCombine
-    get emojis() { return this._emojis }
-
-    _features: string
+    _features: string[]
     //% blockCombine
     get features() { return this._features }
 
-    _forums: string
+    _forums: Channel[]
     //% blockCombine
     get forums() { return this._forums }
 
@@ -77,22 +61,6 @@ class Guild {
     //% blockCombine block="owner id"
     get owner_id() { return this._owner_id }
 
-    _roles: string
-    //% blockCombine
-    get roles() { return this._roles }
-
-    _self_role: string
-    //% blockCombine block="self role"
-    get self_role() { return this._self_role }
-
-    _splash: string
-    //% blockCombine
-    get splash() { return this._splash }
-
-    _stickers: string
-    //% blockCombine
-    get stickers() { return this._stickers }
-
     _text_channels: Channel[]
     //% blockCombine block="text channels"
     get text_channels() { return this._text_channels }
@@ -101,16 +69,14 @@ class Guild {
     //% blockCombine block="vanity url"
     get vanity_url() { return this._vanity_url }
 
-    _widget_enabled: string
-    //% blockCombine block="widget enabled"
-    get widget_enabled() { return this._widget_enabled }
-
     //% block="fetch member with id $id from $this"
     //% this.defl=guild
+    //% blockSetVariable=member
     public fetchMember(id: number): Member { return undefined }
 
     //% block="fetch channel with id $id from $this"
     //% this.defl=guild
+    //% blockSetVariable=channel
     public fetchChannel(id: number): Channel { return undefined }
 
 }
