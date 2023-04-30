@@ -10,6 +10,7 @@
         "discord.ts",
         "discordChannel.ts",
         "discordColour.ts",
+        "discordContext.ts",
         "discordEmbed.ts",
         "discordGuild.ts",
         "discordMember.ts",
