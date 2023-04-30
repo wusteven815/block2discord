@@ -77,7 +77,7 @@ class Channel {
         tts?: boolean) {
     }
 
-    //% block="send and save message in $this - message $content||- embed $embed - file $file - text to speech $tts"
+    //% block="save message and send in $this - message $content||- embed $embed - file $file - text to speech $tts"
     //% this.defl=channel
     //% content.defl="Hello World!"
     //% expandableArgumentMode="toggle"

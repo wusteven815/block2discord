@@ -147,7 +147,7 @@ class Message {
         attachments: string) {
     }
 
-    //% block="edit and save message $this - content $content - embed $embed - attachments $attachments"
+    //% block="save message and edit $this - content $content - embed $embed - attachments $attachments"
     //% this.defl=message
     //% content.defl="Hello World!"
     //% inlineInputMode=external
@@ -156,4 +156,28 @@ class Message {
         content: string,
         embed: Embed,
         attachments: string): Message { return undefined }
+
+    //% block="reply to $this - message $content||- embed $embed - file $file - text to speech $tts"
+    //% this.defl=message
+    //% content.defl="Hello World!"
+    //% expandableArgumentMode="toggle"
+    //% inlineInputMode=external
+    public reply(
+        content: string,
+        embed?: Embed,
+        file?: string,
+        tts?: boolean) {
+    }
+
+    //% block="save message and reply to $this - message $content||- embed $embed - file $file - text to speech $tts"
+    //% this.defl=message
+    //% content.defl="Hello World!"
+    //% expandableArgumentMode="toggle" 
+    //% inlineInputMode=external
+    //% blockSetVariable=return_message
+    public replyAlt(
+        content: string,
+        embed?: Embed,
+        file?: string,
+        tts?: boolean): Message { return undefined }
 }

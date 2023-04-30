@@ -1,14 +1,20 @@
 //% color="#3d55f0" icon="\uf04b"
-//% groups="['Client', 'Events - Channel', 'Events - Member', 'Events - Message']"
+//% groups="['Bot', 'Events - Bot', 'Events - Channel', 'Events - Member', 'Events - Message']"
 namespace discord {
 
-    //% block="run bot with token $token"
-    //% group="Client"
-    export function run(token: string) {}
+    //% block="run bot with token $token and command prefix $prefix"
+    //% prefix.defl=""
+    //% group="Bot"
+    export function run(token: string, prefix: string) {}
 
     //% block="this bot"
-    //% group="Client"
-    export function clientUser(): Member { return undefined }
+    //% group="Bot"
+    export function botUser(): Member { return undefined }
+
+    //% block="on command with name $name with context $context"
+    //% draggableParameters="handler"
+    //% group="Events - Bot"
+    export function onBotCommand(name: string, handler: (context: Context) => void) {}
 
     //% block="on guild channel update from $before to $after"
     //% draggableParameters

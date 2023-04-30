@@ -105,4 +105,12 @@ class Guild {
     //% blockCombine block="widget enabled"
     get widget_enabled() { return this._widget_enabled }
 
+    //% block="fetch member with id $id from $this"
+    //% this.defl=guild
+    public fetchMember(id: number): Member { return undefined }
+
+    //% block="fetch channel with id $id from $this"
+    //% this.defl=guild
+    public fetchChannel(id: number): Channel { return undefined }
+
 }
