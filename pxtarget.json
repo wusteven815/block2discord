@@ -1,7 +1,7 @@
 {
-    "id": "sample",
-    "name": "sample",
-    "title": "MakeCode Editor Sample",
+    "id": "block2discord",
+    "name": "Block2Discord",
+    "title": "Block2Discord",
     "corepkg": "core",
     "cloud": {
         "workspace": false,
@@ -23,11 +23,11 @@
         "autoRun": true
     },
     "appTheme": {
-        "logoUrl": "https://github.com/Microsoft/pxt-sample",
-        "homeUrl": "http://microsoft.github.io/pxt-sample/",
-        "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
-        "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
-        "betaUrl": "https://makecode.com/",
+        "logoUrl": "",
+        "homeUrl": "",
+        "privacyUrl": "",
+        "termsOfUseUrl": "",
+        "betaUrl": "",
         "docMenu": [
             {
                 "name": "About",

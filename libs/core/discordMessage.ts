@@ -76,6 +76,7 @@ class Message {
     //% block="edit message $this - content $content - embed $embed - attachments $attachments"
     //% this.defl=message
     //% content.defl="Hello World!"
+    //% attachments.defl="empty array"
     //% inlineInputMode=external
     public edit(
         content: string,
@@ -86,6 +87,7 @@ class Message {
     //% block="save message and edit $this - content $content - embed $embed - attachments $attachments"
     //% this.defl=message
     //% content.defl="Hello World!"
+    //% attachments.defl="empty array"
     //% inlineInputMode=external
     //% blockSetVariable=return_message
     public editAlt(
