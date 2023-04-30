@@ -22,5 +22,5 @@ discord.onMemberJoin(function (member) {
 })
 let embed: Embed = null
 let channel: Channel = null
-discord.run("MTAxODI3NDk4MDg4ODMzNDUwNg.GTvfAC.105NeUPJwGg61ezeaiPW_kmWl5ZrqmYYUPCDY8", "")
+discord.run("", "")
 ```

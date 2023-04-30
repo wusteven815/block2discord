@@ -36,6 +36,6 @@ discord.onBotCommand("py", function (context) {
     )
 })
 let embed: Embed = null
-discord.run("MTAxODI3NDk4MDg4ODMzNDUwNg.GTvfAC.105NeUPJwGg61ezeaiPW_kmWl5ZrqmYYUPCDY8", ".")
+discord.run("", ".")
 
 ```
