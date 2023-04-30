@@ -5,7 +5,6 @@
         "README.md",
         "pxt-core.d.ts",
         "pxt-helpers.ts",
-        "enums.d.ts",
         "sims.d.ts",
         "discord.ts",
         "discordChannel.ts",
